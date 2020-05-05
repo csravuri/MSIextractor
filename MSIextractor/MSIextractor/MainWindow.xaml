@@ -10,17 +10,18 @@
         <StackPanel Orientation="Horizontal" >
             <StackPanel>
                 <Label Content="Slect MSI file"/>
-                <TextBox />
+                <TextBox Name="txtMSIPath" IsEnabled="False"/>
             </StackPanel>
-            <Button Content="Browse"/>
+            <Button Content="Browse" Click="msiSelect_Click"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" >
             <StackPanel>
-                <Label Content="Slect folder to save content"/>
-                <TextBox />
+                <Label Content="Slect folder to save content" />
+                <TextBox Name="txtSaveFolder" IsEnabled="False"/>
             </StackPanel>
-            <Button Content="Browse"/>
+            <Button Content="Browse" Click="saveFolderSelect_Click"/>
         </StackPanel>
+        <Button Content="Convert" Click="convert_Click"/>
     </StackPanel>
 </Window>
