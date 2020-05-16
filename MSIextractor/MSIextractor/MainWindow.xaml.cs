@@ -53,6 +53,8 @@ namespace MSIextractor
             string exeString = "msiexec";
             string argString = $"/a \"{txtMSIPath.Text}\" /qb TARGETDIR=\"{txtSaveFolder.Text}\"";
             Process.Start(exeString, argString);
+
+            Process.Start(txtSaveFolder.Text);
         }
     }
 
